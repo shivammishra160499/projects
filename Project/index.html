@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Players Game</title>
+    <style>
+        /* Add some basic styling for better presentation */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-color: #7f4a9f;
+        }
+        .player-section {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: hsl(108, 94%, 59%);
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: hsl(33, 85%, 60%);
+        }
+        .output {
+            margin-top: 10px;
+            background-color: hsl(323, 85%, 60%);
+        }
+    </style>
+    <script src="index.js" defer></script>
+</head>
+<body>
+
+<!-- Player 1 Section -->
+<div class="player-section" id="player1">
+    <h2>Player 1</h2>
+    <button onclick="play(1)">Play</button>
+    <div class="output">
+        <p>Score: <span id="player1Score">0</span></p>
+        <p>Sum: <span id="player1Sum">0</span></p>
+    </div>
+</div>
+
+<!-- Player 2 Section -->
+<div class="player-section" id="player2" >
+    <h2>Player 2</h2>
+    <button onclick="play(2)">Play</button>
+    <div class="output">
+        <p>Score: <span id="player2Score">0</span></p>
+        <p>Sum: <span id="player2Sum">0</span></p>
+    </div>
+</div>
+<p style=" padding: 10px;
+font-size: 30px;
+cursor: pointer;
+background-color: hsl(321, 13%, 39%); ">turn: <span id="turn">1</span></p>
+<!-- <button onclick="restart()">restart</button> -->
+</body>
+</html>
